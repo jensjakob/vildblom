@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Vildblom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+	<style>
+		html {
+			/* background: rgb(111, 207, 151); */
+		}
+		body {
+			font-family: 'Shadows Into Light Two', sans-serif;
+		}
+		#flower {
+			display: flex;
+			justify-content: space-between;
+		}
+		#flower img {
+		}
+		#tree {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(111, 207, 151, 0.95);
+			padding-top: 100px;
+		}
+		#nav-items {
+			list-style: none;
+			margin: 0;
+			padding: 0.25em 0.5em;
+		}
+		#nav-items li {
+			padding: .5em 0;
+		}
+		#nav-items a {
+			color: white;
+			text-decoration: none;
+			padding: 0.25em 0.5em;
+		}
+		#nav-items a:hover {
+			text-decoration: underline;
+		}
+		article p {
+			font-family: sans-serif;
+			font-size: 12px;
+		}
+		#window {
+			padding-top: 1em;
+		}
+		#window img {
+			width: 100%;
+			display: block;
+		}
+		#glass .text {
+			font-size: 10px;
+			font-family: sans-serif;
+			margin: 7px 0 16px 0;
+		}
+		.textbox {
+			background: #F2C94C;
+			width: 100%;
+			/* padding: 10px 0px 75% 10px; */
+			/* padding-bottom: 75%; */
+			font-size: 2em;
+		}
+		.textbox div {
+			padding: 10px 0 10px 10px;
+		}
+		.textbox a {
+			color: white;
+			text-decoration: none;
+		}
+		#soil {
+			display: flex;
+			align-items: center;
+			font-family: sans-serif;
+			font-size: 10px;
+		}
+		#soil img {
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			margin-right: 15px;
+		}
+		#soil strong {
+			font-family: 'Shadows Into Light Two', sans-serif;
+			font-size: 14px;
+		}
+		#soil a {
+			color: black;
+		}
+		@media (min-width: 426px) {
+			#show-nav {
+				display: none;
+			}
+			article {
+				border-top: 1px solid #792223;
+				padding: 1em;
+			}
+			#tree {
+				display: block;
+				position: relative;
+				background-color: initial;
+				padding-top: 10px;
+			}
+			#nav-items li {
+				display: inline;
+			}
+			#nav-items a {
+				color: #792223;
+			}
+			#window {
+				background: #6FCF97;
+				padding: 1em;
+				color: white;
+			}
+			#glass {
+				display: inline-block;
+				vertical-align: top;
+				width: 200px;
+				height: 240px;
+			}
+			.textbox {
+				display: flex;
+				align-items: center;
+				height: 200px;
+				width: 200px;
+			}
+			#soil {
+				padding-top: 1em;
+			}
+		}
+	</style>
+	<script>
+		function toggleMenu() {
+			var element = document.getElementById("nav-items");
+			element.classList.toggle("show");
+		}
+	</script>
+</head>
+<body>
+
+<div id="flower">
+	<img id="logo" src="vildblom-logo.png" width="150" height="100" alt="Vildblom">
+	<a id="show-nav" href="#" onClick="document.getElementById('tree').style.display = 'block'; return false;">
+		<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMEgyNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyMSkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iNSIvPgo8cGF0aCBkPSJNMCAwSDI1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEyKSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxwYXRoIGQ9Ik0wIDBIMjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMykiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iNSIvPgo8L3N2Zz4K">
+	</a>
+</div>
+
+<div id="tree">
+	<ul id="nav-items">
+		<li><a href="#">Välkommen</a></li>
+		<li><a href="#">Örtutbildningar</a></li>
+		<li><a href="#">etc.</a></li>
+	</ul>
+</div>
+
+<article>
+		<h1>Rubrik</h1>
+		<p>Löpande text visas endast på undersidor.</p>
+	</article>
+	
+<div id="window">
+	<div id="glass">
+		<a href="#"><img src="https://placeimg.com/300/300/nature"></a>
+		<div class="text">Text om bilden</div>
+	</div>
+
+	<div id="glass">
+		<a href="#"><img src="https://placeimg.com/400/400/nature"></a>
+		<div class="text">Utbildningen för alla med intresse för örter och vill fördjupa sig i örtmedicin.</div>
+	</div>
+	<div id="glass">
+		<div class="textbox">
+			<div>
+				<a href="#">Startdatum:<br>
+				6 september</a>
+			</div>
+		</div>
+		<div class="text">
+			Utbildningen för alla med intresse för örter och vill fördjupa sig i örtmedicin.
+		</div>
+	</div>
+</div>
+
+<div id="soil">
+	<img src="zarina.jpg">
+	<div>
+		<strong>Vildblom</strong><br>
+		Zarina Lindell<br>
+		070-757 92 17<br>
+		<a href="mailto:vildblom@hotmail.com">vildblom@hotmail.com</a>
+	</div>
+</div>
+
+</body>
+</html>
