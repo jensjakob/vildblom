@@ -10,7 +10,7 @@
 
 <div id="flower">
 	<a href="/"><img id="logo" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/vildblom-logo.png" width="150" height="100" alt="Vildblom"></a>
-	<a id="show-nav" href="#" onClick="document.getElementById('tree').style.display = 'block'; return false;">
+	<a id="show-nav" href="#" onClick="document.getElementById('nav-items').style.display = 'block'; return false;">
 		<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMEgyNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyMSkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iNSIvPgo8cGF0aCBkPSJNMCAwSDI1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEyKSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxwYXRoIGQ9Ik0wIDBIMjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMykiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iNSIvPgo8L3N2Zz4K">
 	</a>
 </div>
