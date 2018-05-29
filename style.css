@@ -103,7 +103,7 @@ article p {
 	#nav-items {
 		display: block;
 		position: relative;
-		background-color: initial;
+		background-color: transparent;
 		padding-top: 10px;
 	}
 	#nav-items li {
